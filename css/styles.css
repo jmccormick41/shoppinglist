@@ -1,0 +1,78 @@
+
+body {
+    background-color: #A9A9A9;
+    background: url('../images/shopping-list.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.container {
+    text-align: center;
+    background-color: #CD8500;
+    width: 20em;
+    margin: auto;
+}
+
+h1{font-family: Optima;}
+
+#logo {
+    margin-top: 1em;
+}
+
+.title {
+    font-family: Palatino;
+}
+
+.listinput {
+    padding: 1em;
+}
+
+#textenter{
+
+}
+
+#enter {
+    
+}
+
+#list {
+    text-align: left;
+    list-style: none;
+    margin-bottom: 2em;
+}
+
+#list li {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.check {
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin-right: 2em;
+    display: inline;
+    margin-top: .2em;
+}
+
+.check .done {
+    /* add check mark */
+}
+
+.remove {
+    max-height: 1em;
+    max-width: 1em;
+    float: right;
+    margin-right: 2em;
+/*  display: none; */
+}
+.show {
+    display: inline;
+}
