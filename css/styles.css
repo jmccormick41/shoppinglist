@@ -6,7 +6,7 @@ body {
     margin: auto;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
-    line-height: 20px;
+    line-height: auto;
     width: 940px;
 }
 
@@ -19,12 +19,12 @@ header {
   /*text-align: center;*/
 }
 
-.container {
+.container { 
+    box-shadow: 10px 10px 5px grey;
     margin: 16em auto;
     width: 600px;
     background-color: #EEF3E2;
     padding-left: 2em;
-    border-radius: 25px;
     border: 2px; solid; black;
 }
 
@@ -46,54 +46,88 @@ footer {
     margin-left: -2em;
     border-top: 1px solid #e5e5e5;
     background-color: #838B83;
-}
-.row {
-    overflow-y: auto;
-    padding-right: 15em;
-    padding-left: 15em;
+   
+
 }
 
-.thinkful {
-    margin-top: 25px;
+input#item {
+    float:left;
+    margin-bottom:20px;
+}
+input[type=checkbox] {
+    vertical-align:middle;
+    margin: 0 5px;
+}
+ul {
+    list-style-type:none;
+    list-style-position:outside;
+    margin:10px 0px;
+    padding:0px;
+    clear:both;
 }
 
-#instructions {
-    margin-bottom: 25px;
+li {
+    background: #fff;
+    margin:5px 0px;
+    line-height:1.6;
+    padding:10px;
+    border:#222 solid 1px;
 }
-
-#instructions li { 
-    font-style: italic;
+li:nth-child(odd) {
+    background: #ccc;
 }
-
-#list {
-  margin-top: 30px;
-  width: 400px;
+li a {
+    font-size:small;
 }
-
-#list a {
-    float: right;
-    text-decoration: none;
-    color: red;
-    font-size: 11px;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding: 3px;
-}
-
-#list input[type="checkbox"] {
-    margin: 0px 10px;
-}
-
-#list li {
-    line-height: 2;
-    border: 1px tan dotted;
-    background-color: lightyellow;
-}
-
-#list li:hover {
+form a {
+    border-radius: 0.2em 0.2em 0.2em 0.2em;
     cursor: pointer;
+    float:right;
+    font: 11px sans-serif;
+    margin: 0;
+    margin-top:2px;
+    outline: medium none;
+    overflow: visible;
+    height:17px;
+    padding:0.3em 0.3em 0 0.3em;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #2E8B57;
+    background-image: -moz-linear-gradient(center top, #4BC380, #2E8B57);
+    border: 1px solid #1D5837;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 #1D5837;
 }
-
-.completed {
-    text-decoration: line-through;
-}  
+form a:hover {
+    background-color: #71D09B;
+    background-image: -moz-linear-gradient(center top, #71D09B, #2E8B57);
+    border: 1px solid #1D5837;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 #1D5837;
+}
+form a:active {
+    border-color: #1D5837;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+form a.delete {
+    background-color: #CD0000;
+    background-image: -moz-linear-gradient(center top, #FF2323, #CD0000);
+    border: 1px solid #890000;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 #890000;
+    margin-top:0px;
+    height:17px;
+}
+form a.delete:hover {
+    background-color: #FF5656;
+    background-image: -moz-linear-gradient(center top, #FF5656, #CD0000);
+    border: 1px solid #890000;
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 #890000;
+}
+form a.delete:active {
+    border-color: #890000;
+    color: #FFFFFF;
+    text-shadow: none;
+}
