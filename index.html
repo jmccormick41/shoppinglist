@@ -10,35 +10,32 @@
     <body>
         
         <div class="container">
-                <header>
-                
+            <header>
                 <h1>Shopping List</h1>
-                
                 <img id="logo" src="images/shoppingcart2.png" height="120" width="120"/>
-                
-                </header>
+            </header>
         <div class="content"></div>
-        
         <h2>Instructions</h2>
 
         <p>Enter items in box. Press enter or click on add button to add items. </p>
-        <p>Check items when completed. </p>
-        <p>Click the remove button to delete items.</p>
+        <p>Hover over completed items and click when done. </p>
 
-
-            <input type="text" name="newItemTextBox" id="newItemTextBox">
-            <input type="submit" value="Add" name="AddButton" id="AddButton">
-
-            <ul id="list"></ul>
+       <form>
+        <label>Add Items:</label>
+        <input class="input" type="text">
+        <input type="submit" value="Add">
+    </form>
+    <ul title="Click to delete; drag to reorder">
+    </ul>
                 
         <footer>
-        <div class="thinkful">
-                    Page created by Jeff McCormick <a href="http://www.thinkful.com"/>Thinkful</a> Front-End Web Development course.
-        </div>
+            <div class="thinkful">
+                Page created by Jeff McCormick <a href="http://www.thinkful.com"/>Thinkful</a> Front-End Web Development course.
+            </div>
         </footer>             
         </div>
         
-                <script src="js/jquery-2.1.4.js"/></script>                   
-                <script src="js/app.js"/></script>
+        <script src="js/jquery-2.1.4.js"/></script>                   
+        <script src="js/app.js"/></script>
     </body>
 </html>

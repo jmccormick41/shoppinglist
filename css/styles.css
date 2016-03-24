@@ -50,42 +50,35 @@ footer {
 }
 
 
-#list {
-  margin-top: 30px;
-  width: 400px;
+
+ul {
+    display: inline-block;
+    cursor: move;
+    text-align: left;
+    width: 300px;
+    max-width: 100%;
 }
 
-#list a {
-    float: right;
-    text-decoration: none;
-    color: red;
-    font-size: 11px;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding: 3px;
+li {
+    color: #333333;
+    background:url(../images/check.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    list-style-type: none;
+    padding-left:25px;
+
+
 }
 
-#list input[type="checkbox"] {
-    margin: 0px 10px;
+li:first-child {
+    font-size: 130%;
+    color: #333333;
 }
 
-#list li {
-    line-height: 2;
-    border: 1px tan dotted;
-    background-color: lightyellow;
-}
-
-#list li:hover {
+input[type='submit'] {
+    background-color: red;
+    border: 0;
+    color: white;
+    padding: 5px 10px;
     cursor: pointer;
 }
-
-.completed {
-    text-decoration: line-through;
-}   
-
-ol, ul {
-  list-style: none;
-}
-
-
-
